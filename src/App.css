@@ -1,0 +1,533 @@
+/* Basic Styling */
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  width: 1550px;
+}
+
+.header-left h1 {
+  font-size: 30px;
+}
+
+.header-center {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  width: 500px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.header-right button {
+  background-color: #5c6bc0;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.header-right button:hover {
+  background-color: #3f51b5;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.tab-button.active {
+  color: #5c6bc0;
+  border-bottom: 2px solid #5c6bc0;
+}
+
+.tab-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.feed-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.feed-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 15px;
+}
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.recipe-details {
+  padding: 10px 0;
+}
+
+.feed-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-btn, .comment-btn, .share-btn {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #555;
+}
+
+/* Community Section */
+.community-feed-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.community-post-box {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 30px;
+}
+
+.community-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-header h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  padding: 10px 0;
+}
+
+.image-box {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.create-post {
+  margin-bottom: 20px;
+}
+
+.post-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 100px;
+  font-size: 1em;
+}
+
+.post-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+/* Login Page */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #5c6bc0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.login-btn:hover {
+  background-color: #3f51b5;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+/* Meal Plan Styling */
+.meal-plan-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.meal-day {
+  text-align: center;
+  flex: 1;
+}
+
+.meal-box {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.add-meal-btn {
+  font-size: 2em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.generate-btn {
+  margin-top: 20px;
+  background-color: #5c6bc0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.generate-btn:hover {
+  background-color: #3f51b5;
+}
+
+.dietary-preferences {
+  margin-top: 30px;
+}
+
+.calories-slider {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.dietary-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.dietary-btn {
+  background-color: #ddd;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.dietary-btn.active {
+  background-color: #5c6bc0;
+  color: white;
+}
+
+.generate-btn {
+  background-color: #5c6bc0;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.generate-btn:hover {
+  background-color: #3f51b5;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  text-align: center;
+}
+
+.profile-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.profile-header p {
+  color: #777;
+  font-size: 16px;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat strong {
+  font-size: 24px;
+}
+
+.profile-achievements h3 {
+  margin-top: 20px;
+}
+
+.profile-achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-achievements li {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.profile-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-info h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.profile-info p {
+  font-size: 16px;
+  color: #555;
+}
+
+.profile-stats p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.achievements {
+  display: flex;
+  margin-top: 10px;
+}
+
+.achievement {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.achievement span {
+  margin-right: 8px;
+}
+
+.activity-list {
+  background-color: #e0f7fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.activity-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+.activity-list {
+  background-color: white;  /* Light Blue background */
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.activity-item span {
+  margin-right: 10px;
+}
+
+.activity-item p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.activity-feed {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.activity-item span {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.activity-item p {
+  margin: 0;
+}
+
+.profile-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
