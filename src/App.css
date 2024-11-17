@@ -14,7 +14,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 30px;
-  width: 1550px;
+  width: 1660px;
 }
 
 .header-left h1 {
@@ -109,8 +109,18 @@
   border: none;
   font-size: 1.2em;
   cursor: pointer;
-  color: #555;
+  color: #d43333;
 }
+.comment-input {
+  width: 100%; /* Make it responsive */
+  height: 40px; /* Adjust the height */
+  padding: 10px; /* Add some padding for better user experience */
+  border: 1px solid #ccc; /* Add border for better visibility */
+  border-radius: 5px; /* Optional, for rounded corners */
+  font-size: 16px; /* Adjust font size */
+  resize: vertical; /* Allow vertical resizing */
+}
+
 
 /* Community Section */
 .community-feed-container {
@@ -531,3 +541,401 @@ body {
   display: flex;
   align-items: center;
 }
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Container for the Community Section */
+.community {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.community h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Community Feed Section */
+.community-feed-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Community Post Box */
+.community-post-box {
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.community-post {
+  padding: 15px;
+}
+
+.post-header h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.post-content p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.like-btn, .comment-btn, .share-btn {
+  font-size: 1rem;
+}
+
+/* Event Boxes */
+.event-box {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.event-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.rsvp-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rsvp-btn:hover {
+  background-color: #218838;
+}
+
+/* Create Event Section */
+.create-event {
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.create-event input,
+.create-event textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  color: #555;
+}
+
+.create-event textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.create-event-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.create-event-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Registration Token Message */
+.registration-message {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .community-feed-container {
+    grid-template-columns: 1fr;
+  }
+
+  .community h2 {
+    font-size: 1.8rem;
+  }
+
+  .community-post-box, .event-box, .create-event {
+    padding: 15px;
+  }
+
+  .create-event-btn, .rsvp-btn {
+    padding: 10px 15px;
+  }
+
+  .create-event input,
+  .create-event textarea {
+    padding: 10px;
+  }
+}
+/* Community Feed Section */
+.community-feed-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Title of Community Feed */
+.community h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Move Community Events Section Below */
+.community-events {
+  margin-top: 40px; /* Adds spacing between the posts and the events section */
+}
+
+.community-events h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Event Box Styles */
+.event-box {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.event-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.rsvp-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rsvp-btn:hover {
+  background-color: #218838;
+}
+/* Gamification Tab Styles */
+.tab-content .gamification {
+  display: flex; /* Flexbox to divide the content into two halves */
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #f8f8f8; /* Light background for the section */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.gamification .game-image-container,
+.gamification .game-details-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.gamification .game-image-container {
+  text-align: center;
+}
+
+.gamification .game-image-container img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gamification .game-details-container {
+  padding-left: 40px;
+  display: flex;
+  justify-content: flex-end; /* Push the content to the right */
+  align-items: flex-start;
+}
+
+.gamification .game-details-container h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: right; /* Align text to the right */
+}
+
+.gamification .game-details-container p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: right; /* Align text to the right */
+}
+
+.gamification .game-details-container ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.gamification .game-details-container ul li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  text-align: right; /* Align text to the right */
+}
+
+.gamification .start-game-btn {
+  background-color: #ff9800; /* Button background color */
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.gamification .start-game-btn:hover {
+  background-color: #e68900; /* Slightly darker shade on hover */
+  transform: scale(1.05); /* Slight scale effect for interaction */
+}
+
+.gamification .start-game-btn:focus {
+  outline: none;
+}
+.meal-plan-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meal-day {
+  text-align: center;
+}
+
+.meal-box {
+  position: relative;
+}
+
+.add-meal-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+}
+
+.generate-btn {
+  margin-top: 20px;
+}
+
+.dietary-preferences {
+  margin-top: 30px;
+}
+
+.dietary-buttons button {
+  margin: 5px;
+}
+
+.calories-slider {
+  width: 100%;
+}
+
+.dietary-btn.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.dietary-btn {
+  background-color: #f1f1f1;
+}
+
+
